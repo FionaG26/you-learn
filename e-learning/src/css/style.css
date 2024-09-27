@@ -6,7 +6,6 @@
     --dark: #181d38;
 }
 
-
 .fw-medium {
     font-weight: 600 !important;
 }
@@ -23,58 +22,100 @@
     z-index: 99;
 }
 
-
-/*** Spinner ***/
-#spinner {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .5s ease-out, visibility 0s linear .5s;
-    z-index: 99999;
+/* Global Variables */
+:root {
+    --primary: #007bff; /* Primary color */
+    --light: #f8f9fa; /* Light background */
+    --dark: #343a40; /* Dark text color */
 }
 
-#spinner.show {
-    transition: opacity .5s ease-out, visibility 0s linear 0s;
-    visibility: visible;
-    opacity: 1;
-}
-
-
-/*** Button ***/
-.btn {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 600;
-    transition: .5s;
-}
-
-.btn.btn-primary,
-.btn.btn-secondary {
-    color: #FFFFFF;
-}
-
-.btn-square {
-    width: 38px;
-    height: 38px;
-}
-
-.btn-sm-square {
-    width: 32px;
-    height: 32px;
-}
-
-.btn-lg-square {
-    width: 48px;
-    height: 48px;
-}
-
-.btn-square,
-.btn-sm-square,
-.btn-lg-square {
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif; /* Use a clean font */
+    background-color: var(--light); /* Light background for the body */
+    color: var(--dark); /* Dark text for contrast */
+    margin: 0;
     padding: 0;
+}
+
+/* Centering Container */
+.container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: normal;
-    border-radius: 0px;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+/*** Registration Form ***/
+.register-form {
+    max-width: 400px; /* Limit the form width */
+    width: 100%; /* Full width for small screens */
+    margin: 20px; /* Margin around the form */
+    padding: 20px; /* Inner padding */
+    background-color: white; /* White background for the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.register-form h2 {
+    text-align: center; /* Center the header */
+    color: var(--dark); /* Dark color for contrast */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+.register-form .form-group {
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+.register-form .form-group label {
+    display: block; /* Block display for labels */
+    margin-bottom: 5px; /* Space below label */
+    color: var(--dark); /* Dark color for labels */
+}
+
+.register-form .form-group input {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Padding inside input */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    transition: border-color 0.3s; /* Smooth border color change */
+}
+
+.register-form .form-group input:focus {
+    border-color: var(--primary); /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.register-form .btn {
+    margin-top: 20px; /* Space above button */
+    width: 100%; /* Full width button */
+    padding: 10px; /* Padding for button */
+    font-size: 16px; /* Button font size */
+    background-color: var(--primary); /* Primary color for button */
+    color: white; /* White text on button */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background color change */
+}
+
+.register-form .btn:hover {
+    background-color: darken(var(--primary), 10%); /* Darken on hover */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .register-form {
+        padding: 15px; /* Less padding on smaller screens */
+    }
+
+    .register-form h2 {
+        font-size: 1.5em; /* Slightly smaller header */
+    }
+
+    .register-form .btn {
+        font-size: 14px; /* Smaller button font size */
+    }
 }
 
 
@@ -530,114 +571,4 @@
     margin-right: 0;
     padding-right: 0;
     border-right: none;
-}
-
-/********** Template CSS **********/
-:root {
-    --primary: #f69050;
-    --light: #F0FBFC; /* You have defined --light twice, consider renaming one */
-    --dark: #181d38;
-}
-
-/* General Button Styles */
-.btn {
-    background-color: var(--primary);
-    border: none;
-}
-
-.btn a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.btn:hover {
-    background: transparent;
-    color: var(--primary) !important;
-    border: 1px solid var(--primary);
-}
-
-.btn:hover a {
-    color: var(--primary) !important;
-}
-
-.btn-light {
-    background-color: var(--light);
-}
-
-.btn-light:hover {
-    background: transparent;
-    color: var(--light) !important;
-    border: 1px solid var(--light);
-}
-
-/* Font Weight Classes */
-.fw-medium {
-    font-weight: 600 !important;
-}
-
-.fw-semi-bold {
-    font-weight: 700 !important;
-}
-
-/* Back to Top Button */
-.back-to-top {
-    position: fixed;
-    display: none;
-    left: 45px;
-    bottom: 45px;
-    z-index: 99;
-}
-
-/*** Registration Form Styles ***/
-.register-form {
-    max-width: 600px; /* Set a max width for the form */
-    margin: auto; /* Center the form */
-    padding: 20px; /* Add padding */
-    border: 1px solid var(--light); /* Optional: Add a border */
-    border-radius: 8px; /* Rounded corners */
-    background-color: #fff; /* Background color */
-}
-
-.register-form h2 {
-    text-align: center; /* Center the title */
-    margin-bottom: 20px; /* Space below the title */
-    color: var(--dark); /* Title color */
-}
-
-.register-form .form-group {
-    margin-bottom: 15px; /* Space between form groups */
-}
-
-.register-form label {
-    font-weight: bold; /* Bold labels */
-    color: var(--dark); /* Label color */
-}
-
-.register-form input,
-.register-form select {
-    width: 100%; /* Full width inputs */
-    padding: 10px; /* Padding inside inputs */
-    border: 1px solid #ccc; /* Input border */
-    border-radius: 4px; /* Rounded corners for inputs */
-    transition: border-color 0.3s; /* Smooth border transition */
-}
-
-.register-form input:focus,
-.register-form select:focus {
-    border-color: var(--primary); /* Change border color on focus */
-    outline: none; /* Remove default outline */
-}
-
-.register-form button {
-    width: 100%; /* Full width button */
-    padding: 10px; /* Padding inside button */
-    background-color: var(--primary); /* Button background */
-    color: #fff; /* Button text color */
-    border: none; /* No border */
-    border-radius: 4px; /* Rounded corners */
-    transition: background-color 0.3s; /* Smooth background transition */
-}
-
-.register-form button:hover {
-    background-color: var(--dark); /* Darker button on hover */
 }
