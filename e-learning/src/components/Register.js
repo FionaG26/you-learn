@@ -89,9 +89,9 @@ const Register = () => {
             </div>
             <div className="col-lg-4 col-md-6">
               <h4 className="text-white mb-3">Contact</h4>
-              <p className="mb-2"><i className="fa fa-map-marker-alt me-3"></i>123 Street, Bangalore, Karnataka</p>
-              <p className="mb-2"><i className="fa fa-phone-alt me-3"></i>+91 8683045908</p>
-              <p className="mb-2"><i className="fa fa-envelope me-3"></i>secretcoder@gmail.com</p>
+              <p className="mb-2"><i className="fa fa-map-marker-alt me-3"></i>184 Nairobi, Kenya</p>
+              <p className="mb-2"><i className="fa fa-phone-alt me-3"></i>+254725094707</p>
+              <p className="mb-2"><i className="fa fa-envelope me-3"></i>fionamuthoni18@gmail.com</p>
               <div className="d-flex pt-2">
                 <button className="btn btn-outline-light btn-social"><i className="fab fa-twitter"></i></button>
                 <button className="btn btn-outline-light btn-social"><i className="fab fa-facebook-f"></i></button>
@@ -105,7 +105,7 @@ const Register = () => {
           <div className="copyright">
             <div className="row">
               <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                &copy; <button className="btn btn-link text-light" onClick={() => window.location.href = 'index.html'}>Secret Coder</button>, All Rights Reserved.
+                &copy; <button className="btn btn-link text-light" onClick={() => window.location.href = 'index.html'}>You Learn</button>, All Rights Reserved.
               </div>
             </div>
           </div>
