@@ -560,3 +560,113 @@
     padding-right: 0;
     border-right: none;
 }
+
+/********** Template CSS **********/
+:root {
+    --primary: #f69050;
+    --light: #F0FBFC; /* You have defined --light twice, consider renaming one */
+    --dark: #181d38;
+}
+
+/* General Button Styles */
+.btn {
+    background-color: var(--primary);
+    border: none;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn:hover {
+    background: transparent;
+    color: var(--primary) !important;
+    border: 1px solid var(--primary);
+}
+
+.btn:hover a {
+    color: var(--primary) !important;
+}
+
+.btn-light {
+    background-color: var(--light);
+}
+
+.btn-light:hover {
+    background: transparent;
+    color: var(--light) !important;
+    border: 1px solid var(--light);
+}
+
+/* Font Weight Classes */
+.fw-medium {
+    font-weight: 600 !important;
+}
+
+.fw-semi-bold {
+    font-weight: 700 !important;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    display: none;
+    left: 45px;
+    bottom: 45px;
+    z-index: 99;
+}
+
+/*** Registration Form Styles ***/
+.register-form {
+    max-width: 600px; /* Set a max width for the form */
+    margin: auto; /* Center the form */
+    padding: 20px; /* Add padding */
+    border: 1px solid var(--light); /* Optional: Add a border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #fff; /* Background color */
+}
+
+.register-form h2 {
+    text-align: center; /* Center the title */
+    margin-bottom: 20px; /* Space below the title */
+    color: var(--dark); /* Title color */
+}
+
+.register-form .form-group {
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+.register-form label {
+    font-weight: bold; /* Bold labels */
+    color: var(--dark); /* Label color */
+}
+
+.register-form input,
+.register-form select {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Input border */
+    border-radius: 4px; /* Rounded corners for inputs */
+    transition: border-color 0.3s; /* Smooth border transition */
+}
+
+.register-form input:focus,
+.register-form select:focus {
+    border-color: var(--primary); /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.register-form button {
+    width: 100%; /* Full width button */
+    padding: 10px; /* Padding inside button */
+    background-color: var(--primary); /* Button background */
+    color: #fff; /* Button text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.register-form button:hover {
+    background-color: var(--dark); /* Darker button on hover */
+}
