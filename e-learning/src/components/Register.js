@@ -7,14 +7,6 @@ import { faUser } from '@fortawesome/free-solid-svg-icons';
 const Register = () => {
   return (
     <>
-      {/* Spinner Start */}
-      <div id="spinner" className="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div className="spinner-border text-primary" style={{ width: '3rem', height: '3rem' }} role="status">
-          <span className="sr-only">Loading...</span>
-        </div>
-      </div>
-      {/* Spinner End */}
-
       {/* Navbar Start */}
       <nav className="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
         <button className="navbar-brand d-flex align-items-center px-4 px-lg-5 btn btn-link" onClick={() => window.location.href = 'index.html'}>
