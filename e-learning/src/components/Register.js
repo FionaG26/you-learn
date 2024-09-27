@@ -19,14 +19,15 @@ const Register = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarCollapse">
           <div className="navbar-nav ms-auto p-4 p-lg-0">
-            <button className="nav-item nav-link btn btn-link" onClick={() => window.location.href = 'index.html'}>Home</button>
-            <button className="nav-item nav-link btn btn-link" onClick={() => window.location.href = 'about.html'}>About</button>
-            <button className="nav-item nav-link btn btn-link" onClick={() => window.location.href = 'courses.html'}>Courses</button>
+            <button className="nav-item nav-link btn btn-link" onClick={() => window.location.href = 'index.js'}>Home</button>
+            <button className="nav-item nav-link btn btn-link" onClick={() => window.location.href = 'about.js'}>About</button>
+            <button className="nav-item nav-link btn btn-link" onClick={() => window.location.href = 'CourseList.js'}>Courses</button>
+             <button className="nav-item nav-link btn btn-link" onClick={() => window.location.href = 'AddCourse.js'}>Courses</button>
             <div className="nav-item dropdown">
               <button className="nav-link dropdown-toggle btn btn-link" data-bs-toggle="dropdown">Pages</button>
               <div className="dropdown-menu fade-down m-0">
-                <button className="dropdown-item btn btn-link" onClick={() => window.location.href = 'team.html'}>Our Team</button>
-                <button className="dropdown-item btn btn-link" onClick={() => window.location.href = 'testimonial.html'}>Testimonial</button>
+                <button className="dropdown-item btn btn-link" onClick={() => window.location.href = 'team.js'}>Our Team</button>
+                <button className="dropdown-item btn btn-link" onClick={() => window.location.href = 'testimonial.js'}>Testimonial</button>
               </div>
             </div>
             <button className="nav-item nav-link btn btn-link" onClick={() => window.location.href = 'contact.html'}>Contact</button>
@@ -68,7 +69,7 @@ const Register = () => {
                     <button className="btn text-light w-100 py-3" type="submit">Signup</button>
                   </div>
                   <div className="col-12 text-center">
-                    <p>Already have an account? <button className="btn btn-link text-decoration-none" onClick={() => window.location.href = 'login.html'}>Login</button></p>
+                    <p>Already have an account? <button className="btn btn-link text-decoration-none" onClick={() => window.location.href = 'login.js'}>Login</button></p>
                   </div>
                 </div>
               </form>
