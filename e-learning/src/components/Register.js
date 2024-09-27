@@ -36,24 +36,6 @@ const Register = () => {
       </nav>
       {/* Navbar End */}
 
-      {/* Header Start */}
-      <div className="container-fluid bg-primary py-5 mb-5 page-header">
-        <div className="container py-5">
-          <div className="row justify-content-center">
-            <div className="col-lg-10 text-center">
-              <h1 className="display-3 text-white animated slideInDown">Signup</h1>
-              <nav aria-label="breadcrumb">
-                <ol className="breadcrumb justify-content-center">
-                  <li className="breadcrumb-item"><button className="btn btn-link text-white" onClick={() => window.location.href = 'index.html'}>Home</button></li>
-                  <li className="breadcrumb-item text-white active" aria-current="page">Signup</li>
-                </ol>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* Header End */}
-
       {/* Signup Start */}
       <div className="container-xxl py-2 mt-4">
         <div className="container">
