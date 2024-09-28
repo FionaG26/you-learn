@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Index = () => {
+const Register = () => {
   return (
     <head>
     <meta charset="utf-8">
