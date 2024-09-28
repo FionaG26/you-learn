@@ -98,16 +98,18 @@ body {
 .footer {
     background-color: var(--dark); /* Dark background for footer */
     color: var(--light); /* Light text for footer */
-    padding: 40px 0; /* Padding for footer */
+    padding: 20px 0; /* Reduce the padding for a compact footer */
 }
 
 .footer h4 {
     color: var(--light); /* Light color for section headers */
-    margin-bottom: 20px; /* Space below header */
+    margin-bottom: 10px; /* Reduce space below header */
 }
 
 .footer .btn-link {
     color: var(--light); /* Light color for buttons */
+    padding: 0; /* Remove padding from footer buttons */
+    margin: 5px 0; /* Add a small margin to space buttons vertically */
 }
 
 .footer .btn-link:hover {
@@ -115,19 +117,21 @@ body {
 }
 
 .footer .fa {
-    margin-right: 10px; /* Space between icons and text */
+    margin-right: 5px; /* Reduce space between icons and text */
 }
 
 .footer .btn-social {
-    margin-right: 10px; /* Space between social buttons */
+    margin-right: 5px; /* Reduce space between social buttons */
     border: 1px solid var(--light); /* Light border for social buttons */
     background-color: transparent; /* Transparent background */
 }
 
 .footer .copyright {
     text-align: center; /* Center copyright text */
-    padding: 20px 0; /* Padding for copyright */
+    padding: 10px 0; /* Reduce padding for copyright */
+    font-size: 14px; /* Reduce font size */
 }
+
 
 /* Back to Top Button */
 .back-to-top {
